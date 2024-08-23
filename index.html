@@ -1,30 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Övning</title>
-</head>
-<body>
-  <form class="form" >
-    <div >
-    <label for="namn">Namn</label>
-    <input id="namn" type="text">
-  </div>
-   
-  <div>
-    <label for="email">Email</label>
-    <input id="email" type="email">
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>DOM-manipulation</title>
+  </head>
+  <body>
+    <header>DOM-Manipulation</header>
 
-  <div>
-    <label for="meddelande"></label>
-    <textarea name="meddelande" id="meddelande"></textarea>
-  </div>
-    
-    <input type="submit" id="submit-btn">
-  </form>
-  <script src="main.js"></script>
-</body>
+    <section class="container">
+      <form id="my-form">
+        <h1>Add User</h1>
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" autocomplete="on" />
+          <p class="msgName"></p>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="text" id="email" autocomplete="on" />
+          <p class="msgEmail"></p>
+        </div>
+
+        <div>
+          <label for="meddelande"></label>
+          <textarea name="meddelande" id="meddelande"></textarea>
+          <p class="msgMeddelande"></p>
+        </div>
+
+        <input class="btn" type="submit" value="Submit" />
+      </form>
+
+      <ul id="users"></ul>
+
+      <!-- <ul class="items">
+      <li class="item 1">Item 1</li>
+      <li class="item 2">Item 2</li>
+      <li class="item 3">Item 3</li>      
+    </ul> -->
+    </section>
+
+    <script src="main.js"></script>
+  </body>
 </html>
