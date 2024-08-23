@@ -62,18 +62,3 @@ function onSubmit(e) {
     meddelandeInput.value = "";
   }
 }
-
-// Lägga till?
-
-// {
-//   const li = document.createElement("li");
-//   li.appendChild(
-//     document.createTextNode(`${nameInput.value} | ${emailInput.value} | ${meddelandeInput.value}`)
-//   );
-
-//   userList.appendChild(li);
-
-//   // Clear fields
-//   nameInput.value = "";
-//   emailInput.value = "";
-//   meddelandeInput.value = "";
